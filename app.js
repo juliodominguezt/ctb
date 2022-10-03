@@ -38,7 +38,8 @@ const list = [
 venom
   .create({
     session: 'session-name', //name of session
-    multidevice: true // for version not multidevice use false.(default: true)
+    multidevice: true ,// for version not multidevice use false.(default: true)
+    headless: false
   })
   .then((client) => start(client))
   .catch((erro) => {
